@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Rewards Bot</title>
+    <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    
+    #content {
+      text-align: center;
+    }
+    
+    #button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Abra 30 Abas do bind e acumule os pontos web</h1>
+        <button id="button">Clique aqui</button>
+    </div>
+    <script>
+        const palavras = [
+            "maçã",
+            "banana",
+            "laranja",
+            "abacaxi",
+            "morango",
+            "uva",
+            "limão",
+            "melancia",
+            "pera",
+            "manga",
+            "kiwi",
+            "cereja",
+            "pêssego",
+            "amora",
+            "abacate",
+            "melão",
+            "framboesa",
+            "caqui",
+            "goiaba",
+            "jabuticaba",
+            "mamão",
+            "figo",
+            "ameixa",
+            "tangerina",
+            "caju",
+            "pitanga",
+            "maracujá",
+            "acelga",
+            "alface",
+            "rúcula"
+        ];
+        document.getElementById('button').addEventListener('click', function() {
+            for (let i = 0; i < 30; i++) {
+                window.open('https://www.bing.com/news/search?q='+palavras[i]);
+            }
+        });
+  </script>
+</body>
+</html>
